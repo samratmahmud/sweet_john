@@ -35,6 +35,7 @@ const config: Config = {
       "10xl": ["220px", {lineHeight: "0.92em"}],
       "54": ["54px", {lineHeight: "-2px"}],
       "28": ["28px", {lineHeight: "-2px"}],
+      "34": ["34px", {lineHeight: ""}],
     },
     fontFamily: {
       "noto-sans-jp": ["'Noto Sans JP'", ...fontFamily.sans],
