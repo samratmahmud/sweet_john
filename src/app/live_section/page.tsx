@@ -4,8 +4,7 @@ import Live from "./Live";
 
 function page() {
   return (
-    <div className="bg-black-0">
-      <Navbar />
+    <div>
       <Live />
     </div>
   );

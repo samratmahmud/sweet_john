@@ -3,20 +3,22 @@ import React, {ReactNode} from "react";
 interface linkAll {
   name: string;
   isActive?: boolean;
-  handelClick?: () => void;
 }
 
 function Navlink(props: linkAll) {
-  let {name, isActive, handelClick} = props;
+  let {name, isActive} = props;
   return (
-    <div onClick={handelClick}>
+    <div className="flex items-center lg:gap-10 gap-6">
       <div
-        className={`md:text-[32px] text-base uppercase ${
+        className={`lg:text-7xl text-34 uppercase ${
           isActive ? "text-yellow-400/90" : "text-gray-50/90"
         }`}
       >
         {name}
       </div>
+      {isActive && (
+        <hr className="flex-grow border-yellow-400 border-t-[3px]" />
+      )}
     </div>
   );
 }

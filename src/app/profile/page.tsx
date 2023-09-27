@@ -5,8 +5,8 @@ import Profilefooter from "./Profilefooter";
 
 function page() {
   return (
-    <div className="bg-black-0">
-      <Navbar />
+    <div>
+   
       <Profileheader />
       <Profilefooter />
     </div>

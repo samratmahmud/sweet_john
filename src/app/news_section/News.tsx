@@ -60,22 +60,27 @@ function News() {
           alt=""
         />
       </div>
-      <div className="flex flex-col lg:gap-16 gap-20 lg:mb-[90px] mb-20">
+      <div className="flex flex-col lg:gap-16 gap-20 lg:mb-16 mb-20">
         {newsProps.map((item, index) => (
           <div key={index}>
-            <div>
+            <div className="hidden lg:block">
               <div className="text-xs italic text-black-0 px-1 mb-2 bg-yellow-400 inline-block">
                 {item.new}
               </div>
+            </div>
+            <div className="flex gap-3 items-center">
               <div className="lg:text-xl text-lg text-neutral-400 mb-1.5">
                 {item.date}
               </div>
-              <div className="lg:text-[32px] text-xl font-bold text-gray-50 lg:mb-5 mb-3">
-                {item.name}
+              <div className="text-xs italic text-black-0 px-1 mb-2 bg-yellow-400 inline-block lg:hidden">
+                {item.new}
               </div>
-              <div className="lg:text-lg text-md text-neutral-400">
-                {item.title}
-              </div>
+            </div>
+            <div className="lg:text-[32px] text-xl font-bold text-gray-50 lg:mb-5 mb-3">
+              {item.name}
+            </div>
+            <div className="lg:text-lg text-base text-neutral-400">
+              {item.title}
             </div>
           </div>
         ))}

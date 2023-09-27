@@ -100,7 +100,7 @@ function Header() {
               </div>
               <div className="mb-12">
                 {news.map((item, index) => (
-                  <div key={index}>
+                  <div key={index} className="group">
                     <div className="flex gap-1 mb-1.5">
                       <div className="text-xs text-neutral-400">
                         {item.date}
@@ -115,17 +115,15 @@ function Header() {
                     <div className="lg:text-xs text-base text-neutral-400 mb-4">
                       {item.title}
                     </div>
-                    <Link href={""}>
-                      <div className="flex gap-2 items-center mb-5">
-                        <div className="lg:text-sm text-base font-medium text-yellow-400">
-                          {item.learn}
-                        </div>
-                        <div>
-                          <img src={item.pic} alt="" />
-                        </div>
+                    <Link href={""} className="flex gap-2 items-center mb-5">
+                      <div className="lg:text-sm text-base font-medium text-yellow-400">
+                        {item.learn}
+                      </div>
+                      <div>
+                        <img src={item.pic} alt="" />
                       </div>
                     </Link>
-                    <hr className="w-full h-[1px] bg-[rgba(255,_255,_255,_0.12)] mb-6" />
+                    <hr className="w-full h-[1px] bg-[rgba(255,_255,_255,_0.12)] mb-6 group-last:hidden" />
                   </div>
                 ))}
               </div>

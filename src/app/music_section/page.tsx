@@ -4,8 +4,7 @@ import MusicVideo from "./MusicVideo";
 
 function page() {
   return (
-    <div className="bg-black-0">
-      <Navbar />
+    <div>
       <MusicVideo />
     </div>
   );

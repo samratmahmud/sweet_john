@@ -6,10 +6,10 @@ import Footerlink from "@/components/common/Footerlink";
 
 function page() {
   return (
-    <div className="bg-black-0">
-      <Navbar />
+    <div>
       <Biovideo />
       <YearsBody />
+      <Footerlink />
     </div>
   );
 }

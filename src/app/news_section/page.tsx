@@ -4,8 +4,7 @@ import News from "./News";
 
 function page() {
   return (
-    <div className="bg-black-0">
-      <Navbar />
+    <div>
       <News />
     </div>
   );

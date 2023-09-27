@@ -4,6 +4,7 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import Navlink from "../template/Navlink";
 import Link from "next/link";
+import {usePathname} from "next/navigation";
 
 const linkDetails = [
   {
@@ -32,49 +33,87 @@ const linkDetails = [
   },
   {
     linkName: "More Links",
-    url: "/",
+    url: "/more_links",
   },
 ];
 
 function Navbar() {
-  const [tab, setTab] = useState(0);
   const [Open, setOpen] = React.useState(false);
   const toggle = () => setOpen((prev) => !prev);
+  const pathn = usePathname();
+
   return (
     <div className="max-w-[1920px] mx-auto px-10">
       <div className="py-7 flex justify-between gap-6 items-center">
         <Link href={"/"}>
-          <div className="md:text-4xl text-[32px] font-black text-yellow-400/90 uppercase">
+          <div className="lg:text-4xl text-[32px] font-black text-yellow-400/90 uppercase">
             Sweet john
           </div>
         </Link>
-        <div onClick={toggle} className="w-16 cursor-pointer">
-          <img src="/picture/menu.png" alt="" />
+        <div onClick={toggle} className="h-6 cursor-pointer">
+          <img src="/picture/div.header__humb.svg" alt="" />
         </div>
       </div>
       <div className="">
-        <Drawer open={Open} onClose={toggle} direction="left">
-          <div className="p-4 pt-8 bg-black-0 h-screen flex flex-col justify-between">
-            <div>
-              <div className="text-2xl font-black text-yellow-400/90 uppercase lg:mb-24 mb-16">
-                Sweet john
+        <Drawer
+          style={{width: "100vw"}}
+          open={Open}
+          onClose={toggle}
+          direction="left"
+        >
+          <div className="">
+            <img
+              className="absolute top-0 bottom-0 left-1/2 opacity-50 lg:opacity-50 -translate-x-full lg:left-0 pl-7 h-full"
+              src="/picture/Sweet johns.svg"
+              alt=""
+            />
+            <div className="p-4 pt-24 pb-28 bg-black-0 h-screen">
+              <div
+                className="absolute lg:right-20 right-8 top-8"
+                role="button"
+                onClick={toggle}
+              >
+                <img src="/picture/Frame (3).svg" alt="" />
               </div>
-              <div className="flex flex-col lg:gap-10 gap-5">
-                {linkDetails.map((item, index) => (
-                  <div key={index}>
-                    <Link href={item.url}>
-                      <Navlink
-                        handelClick={() => setTab(index)}
-                        isActive={tab === index}
-                        name={item.linkName}
-                      />
-                    </Link>
-                  </div>
-                ))}
+              <div className="lg:w-1/2 px-14 mx-auto">
+                <div className="flex flex-col lg:gap-16 gap-12 mb-20">
+                  {linkDetails.map((item, index) => {
+                    return (
+                      <div key={index}>
+                        <Link href={item.url}>
+                          <Navlink
+                            isActive={item.url === pathn}
+                            name={item.linkName}
+                          />
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="flex lg:gap-12 gap-10">
+                  <Link href={""}>
+                    <img
+                      className="max-w-[54px] lg:max-w-none"
+                      src="/picture/Frame (4).svg"
+                      alt=""
+                    />
+                  </Link>
+                  <Link href={""}>
+                    <img
+                      className="max-w-[54px] lg:max-w-none"
+                      src="/picture/Frame (5).svg"
+                      alt=""
+                    />
+                  </Link>
+                  <Link href={""}>
+                    <img
+                      className="max-w-[54px] lg:max-w-none"
+                      src="/picture/Frame (6).svg"
+                      alt=""
+                    />
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="text-gray-50 text-xs text-center">
-              Workaholic Inc., LTD.© 2023. All rights Reserved.
             </div>
           </div>
         </Drawer>

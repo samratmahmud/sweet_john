@@ -8,13 +8,14 @@ interface changing {
 
 function Yearchange(props: changing) {
   let {name, isActive, handelClick} = props;
+
   return (
-    <div onClick={handelClick}>
+    <div role="button" onClick={handelClick} className="pr-3 lg:pl-0">
       <div
         className={`${
           isActive
-            ? "text-4xl text-black-0 font-black uppercase py-10 px-4 bg-yellow-400 rounded-full ring-0 ring-offset-[20px] ring-offset-[rgba(255,_193,_48,_0.48)]"
-            : "text-base text-yellow-400 font-black uppercase py-[22px] px-4 rounded-full border-[3px] border-yellow-400 inline-block"
+            ? "lg:text-4xl text-lg text-black-0 font-black uppercase lg:py-10 py-5 lg:px-4 px-2.5 bg-yellow-400 rounded-full outline lg:outline-[20px] outline-[12px] outline-[#FFC130]/30"
+            : "lg:text-base text-xs text-yellow-400 font-black uppercase lg:py-[22px] py-3.5 lg:px-4 px-2 rounded-full border-[3px] border-yellow-400 inline-block"
         }`}
       >
         {name}

@@ -68,7 +68,7 @@ function Live() {
       <div className="flex flex-col gap-16 lg:mb-48 mb-20">
         {livesAll.map((item, index) => (
           <div key={index} className="lg:flex items-center gap-11">
-            <div>
+            <div className="flex-shrink-0">
               <img
                 className="w-full mb-5 lg:mb-0 rounded-lg lg:rounded-none"
                 src={item.pic}
@@ -76,13 +76,13 @@ function Live() {
               />
             </div>
             <div>
-              <div className="text-xs italic text-black-0 px-1 mb-2 bg-yellow-400 inline-block">
+              <div className="text-xs italic text-black-0 px-1 mb-2.5 bg-yellow-400 inline-block">
                 {item.new}
               </div>
               <div className="lg:text-xl text-lg text-neutral-400 mb-1.5">
                 {item.date}
               </div>
-              <div className="lg:text-[32px] text-xl font-bold text-gray-50 lg:mb-5 mb-3">
+              <div className="lg:text-28 text-xl font-bold text-gray-50 lg:mb-5 mb-3">
                 {item.name}
               </div>
               <div className="lg:text-lg text-md text-neutral-400">
