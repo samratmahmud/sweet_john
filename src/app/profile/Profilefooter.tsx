@@ -132,7 +132,7 @@ function Profilefooter() {
                   {item.desig}
                 </div>
               </div>
-              <div className="lg:text-lg text-base text-neutral-400 relative max-w-[626px lg:ml-7 ml-4">
+              <div className="lg:text-lg text-base text-neutral-400 relative max-w-[626px lg:ml-7 ml-4 pr-0.5 lg:pr-0 lg:max-w-[616px]">
                 {item.title}
                 <div className="w-[5px] bg-yellow-400 absolute top-0 bottom-0 lg:-ml-7 -ml-4"></div>
               </div>
