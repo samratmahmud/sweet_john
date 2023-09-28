@@ -1,5 +1,3 @@
-import Navbar from "@/components/global/Navbar";
-import Image from "next/image";
 import Header from "./home/Header";
 import Footer from "./home/Footer";
 

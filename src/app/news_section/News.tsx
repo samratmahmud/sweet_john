@@ -1,6 +1,5 @@
 import Button from "@/components/common/Button";
 import Footerlink from "@/components/common/Footerlink";
-import Navlink from "@/components/template/Navlink";
 import Link from "next/link";
 import React from "react";
 

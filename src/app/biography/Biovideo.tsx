@@ -1,8 +1,5 @@
 "use client";
-import Footerlink from "@/components/common/Footerlink";
-import Yearchange from "@/components/template/Yearchange";
-import YearsBody from "@/components/template/YearsBody";
-import Link from "next/link";
+import Yearchange from "@/app/biography/Yearchange";
 import React, {useState} from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 

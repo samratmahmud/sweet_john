@@ -61,7 +61,7 @@ function Footer() {
       <div className="lg:flex justify-between grid gap-12 lg:mb-[60px] mb-10">
         {music.map((item, index) => (
           <div key={index}>
-            <div className="mb-6">
+            <div className="mb-6 cursor-pointer">
               <img className="w-screen" src={item.pic} alt="" />
             </div>
             <div className="text-lg text-gray-50 font-bold max-w-[324px] mb-4">

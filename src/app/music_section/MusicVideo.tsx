@@ -92,13 +92,15 @@ function MusicVideo() {
             <div className="lg:text-lg text-[24px] font-bold text-gray-50 mb-6">
               {item.name}
             </div>
-            <div className="flex items-center gap-2">
-              <div className="lg:text-sm text-base font-medium text-yellow-400">
-                {item.learn}
-              </div>
-              <div>
-                <img src={item.tirIcon} alt="" />
-              </div>
+            <div className="inline-block">
+              <Link href={""} className="flex items-center gap-2">
+                <div className="lg:text-sm text-base font-medium text-yellow-400">
+                  {item.learn}
+                </div>
+                <div>
+                  <img src={item.tirIcon} alt="" />
+                </div>
+              </Link>
             </div>
           </div>
         ))}
