@@ -40,7 +40,7 @@ function Profileheader() {
       </div>
       <div className="flex flex-col gap-5 lg:mb-24 mb-16">
         {johnDetails.map((item) => (
-          <div className="lg:text-lg text-base text-neutral-400 lg:max-w-[1056px] pr-2.5 lg:pr-0">
+          <div className="lg:text-lg text-base text-neutral-400 lg:max-w-[1056px] pr-2.5 lg:pr-0 font-roboto">
             {item}
           </div>
         ))}
