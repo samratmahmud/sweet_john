@@ -49,8 +49,8 @@ let allVideo = [
 function YearsBody() {
   return (
     <div className="container mb-32">
-      <div className="flex flex-col lg:pl-14 pl-8 lg:gap-28 gap-9 relative">
-        <div className="w-1 lg:left-14 left-8 -top-28 bottom-6 bg-yellow-400 absolute"></div>
+      <div className="flex flex-col lg:px-14 pl-8 lg:gap-28 gap-9 relative">
+        <div className="w-1 lg:left-14 left-8 -top-40 bottom-6 bg-yellow-400 absolute"></div>
         {allVideo.map((item, index) => (
           <div key={index}>
             <div className="flex flex-row lg:gap-6 gap-3.5 lg:items-center">

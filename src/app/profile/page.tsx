@@ -1,14 +1,14 @@
 import React from "react";
-import Profileheader from "./Profileheader";
-import Profilefooter from "./Profilefooter";
 import Awards from "./Awards";
+import BandMembers from "./BandMembers";
+import ProfileHeader from "./ProfileHeader";
 
 function page() {
   return (
     <div>
-      <Profileheader />
+      <ProfileHeader />
       <Awards />
-      <Profilefooter />
+      <BandMembers />
     </div>
   );
 }

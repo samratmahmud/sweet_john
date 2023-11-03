@@ -46,7 +46,7 @@ const bandMember = [
   },
 ];
 
-function Profilefooter() {
+function BandMembers() {
   return (
     <div className="container">
       <div className="lg:text-7xl text-28 font-black text-gray-50/90 uppercase lg:mb-[74px] mb-7">
@@ -96,4 +96,4 @@ function Profilefooter() {
   );
 }
 
-export default Profilefooter;
+export default BandMembers;

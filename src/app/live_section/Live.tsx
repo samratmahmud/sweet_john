@@ -76,18 +76,18 @@ function Live() {
               />
             </div>
             <div className="">
-              <div className="flex flex-row-reverse items-center lg:items-start lg:flex-col gap-2">
-                <div className="text-xs italic text-black-0 px-1  bg-yellow-400 max-w-[38px]">
-                  {item.new}
-                </div>
+              <div className="flex items-center lg:items-start lg:flex-col-reverse gap-2">
                 <div className="lg:text-xl text-lg text-neutral-400 mb-1.5">
                   {item.date}
+                </div>
+                <div className="text-xs italic text-black-0 px-1  bg-yellow-400 max-w-[38px]">
+                  {item.new}
                 </div>
               </div>
               <div className="lg:text-[29px] text-xl font-bold text-gray-50 lg:mb-5 mb-3">
                 {item.name}
               </div>
-              <div className="lg:text-lg text-base text-neutral-400">
+              <div className="lg:text-lg text-base text-neutral-400 font-roboto">
                 {item.title}
               </div>
             </div>

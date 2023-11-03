@@ -32,6 +32,14 @@ const yearsChange = [
     name: "2018",
     url: "/",
   },
+  {
+    name: "2018",
+    url: "/",
+  },
+  {
+    name: "2018",
+    url: "/",
+  },
 ];
 
 function Biovideo() {
@@ -51,8 +59,8 @@ function Biovideo() {
           <div className="mb-10">
             <img className="w-full" src="/picture/idle.webp (20).png" alt="" />
           </div>
-          <ScrollContainer className="scroll-container -m-5">
-            <div className="flex flex-row justify-between items-center lg:gap-28 gap-16 p-5 lg:mb-20 mb-24">
+          <ScrollContainer className="scroll-container -ml-5">
+            <div className="flex flex-row justify-between items-center lg:gap-28 gap-[70px] p-5 lg:mb-28 mb-32">
               {yearsChange.map((item, index) => (
                 <Yearchange
                   key={index}

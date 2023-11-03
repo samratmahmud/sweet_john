@@ -50,8 +50,8 @@ const config: Config = {
     screens: {
       sm: "600px",
       md: "768px",
-      lg: "1119px",
-      xl: "1920px",
+      lg: "992px",
+      xl: "1120px",
     },
   },
   plugins: [],

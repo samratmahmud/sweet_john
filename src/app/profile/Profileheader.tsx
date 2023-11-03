@@ -21,7 +21,7 @@ const streming = [
   },
 ];
 
-function Profileheader() {
+function ProfileHeader() {
   return (
     <div className="container">
       <div className="lg:text-8xl text-4xl font-black uppercase text-gray-50/90 lg:mt-44 mt-12 flex items-center lg:gap-11 gap-4 lg:mb-16 mb-10">
@@ -64,4 +64,4 @@ function Profileheader() {
   );
 }
 
-export default Profileheader;
+export default ProfileHeader;
