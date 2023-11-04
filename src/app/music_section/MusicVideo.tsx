@@ -71,49 +71,49 @@ let videoProps = [
 
 function MusicVideo() {
   return (
-    <div className="container">
-      <div className="lg:mt-44 mt-16 flex items-center lg:gap-10 gap-4 lg:mb-[106px] mb-10">
-        <div className="lg:text-8xl text-6xl font-black text-gray-50">MV</div>
-        <img
-          className="lg:max-h-16 max-h-6 flex-grow"
-          src="/picture/Group 1171275213.png"
-          alt=""
-        />
-      </div>
-      <div className="grid lg:grid-cols-3 gap-12 lg:mb-24 mb-12">
-        {videoProps.map((item, index) => (
-          <div key={index} className="">
-            <div className="mb-6">
-              <img className="w-full" src={item.pic} alt="" />
+    <section>
+      <div className="container">
+        <div className="lg:mt-44 mt-16 flex items-center lg:gap-10 gap-4 lg:mb-[106px] mb-10">
+          <div className="lg:text-8xl text-6xl font-black text-gray-50">MV</div>
+          <img
+            className="lg:max-h-16 max-h-6 flex-grow"
+            src="/picture/Group 1171275213.png"
+            alt=""
+          />
+        </div>
+        <div className="grid lg:grid-cols-3 gap-12 lg:mb-24 mb-12">
+          {videoProps.map((item, index) => (
+            <div key={index} className="">
+              <div className="mb-6">
+                <img className="w-full" src={item.pic} alt="" />
+              </div>
+              <div className="lg:text-xs text-md text text-neutral-400 mb-3">
+                {item.date}
+              </div>
+              <div className="lg:text-lg text-[24px] font-bold text-gray-50 mb-6">
+                {item.name}
+              </div>
+              <div className="inline-block">
+                <Link href={""} className="flex items-center gap-2">
+                  <div className="lg:text-sm text-base font-medium text-yellow-400">
+                    {item.learn}
+                  </div>
+                  <div>
+                    <img src={item.tirIcon} alt="" />
+                  </div>
+                </Link>
+              </div>
             </div>
-            <div className="lg:text-xs text-md text text-neutral-400 mb-3">
-              {item.date}
-            </div>
-            <div className="lg:text-lg text-[24px] font-bold text-gray-50 mb-6">
-              {item.name}
-            </div>
-            <div className="inline-block">
-              <Link href={""} className="flex items-center gap-2">
-                <div className="lg:text-sm text-base font-medium text-yellow-400">
-                  {item.learn}
-                </div>
-                <div>
-                  <img src={item.tirIcon} alt="" />
-                </div>
-              </Link>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="lg:mb-32 mb-[60px]">
+          <Link href={""}>
+            <Button name="MORE" />
+          </Link>
+        </div>
       </div>
-      <div className="lg:mb-32 mb-[60px]">
-        <Link href={""}>
-          <Button name="MORE" />
-        </Link>
-      </div>
-      <div>
-        <Footerlink />
-      </div>
-    </div>
+      <Footerlink />
+    </section>
   );
 }
 
